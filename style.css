@@ -1,0 +1,268 @@
+body {
+  background-color: rgb(50, 69, 102);
+margin: 0px;
+font-family: Verdana, Georgia, serif;
+font-size: 14px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 300%
+}
+
+h2 {
+  color: orange;
+  text-align: center;
+  font-size: 120%
+}
+
+h3 {
+  color: orange;
+  font-family: monospace;
+  font-style: italic;
+  text-align: center;
+  font-size: 120%
+}
+.div {
+  color: White;
+  font-size: 120%;
+}
+
+
+.container {
+  color: white;
+  list-style-type: none;
+}
+
+#shoppingcart {
+  color: black;
+}
+
+/* Header section
+================================= */
+#header {
+  background-color: #5c755e;
+  margin: 10px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+/* Navigation section
+================================= */
+#navbar ul{
+  padding: 5px;
+  list-style-type: center;
+  text-align: center;
+  background-color: #000;
+  margin: 10px;;
+  border-radius: 5px;
+}
+
+#navbar ul li {
+display: inline;
+}
+
+#navbar ul li a {
+text-decoration: none;
+font-family: Arial;
+padding: .2em 1em;
+color: #fff;
+background-color: #000;
+}
+
+#navbar ul li a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Sidebar section
+================================= */
+.sideright {
+background-color: #e5e4d7;
+margin: 10px;
+border-radius: 5px;
+padding: 20px;
+font-size: 105%
+width: 260px;
+float: right;
+width: 260px;
+}
+
+/* Main section
+================================= */
+.main {
+  background-color: #e5e4d7;
+  margin-left: 10px;
+  margin-right: 320px;
+  margin-top: 10px;
+  border-radius: 5px
+  font-size: 110
+}
+/* Footer section
+================================= */
+#footer {
+  background-color: #5c755e;
+  margin: 10px;
+  height: 60px;
+  border-radius: 5px;
+  color: #efe5do;
+  text-align: center;
+  padding: 15px;
+  font-size: 90%;
+}
+
+#footer ul{
+  padding: 5px;
+  list-style-type: center;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#footer ul li {
+display: inline;
+}
+
+#footer ul li a {
+text-decoration: none;
+font-family: Arial;
+padding: .2em 1em;
+color: #efe5d0;
+background-color: #5c755e;
+}
+
+#footer ul li a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Image section
+================================= */
+img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 5px;
+ }
+
+ /* Grid section
+ ================================= */
+ .container-grid {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-gap: 10px;
+   grid-template-rows: 100px 100px 100px 100px 100px 100px;
+   grid-auto-rows: 100px;
+ }
+
+ .nested-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+   padding: 10px;
+   grid-auto-rows: 150px;
+ }
+
+ .section1 {
+   grid-column: 1;
+   grid-row: 1;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+ .section2 {
+   grid-column: 2;
+   grid-row: 1;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+
+ .section3 {
+   grid-column: 3;
+   grid-row: 1;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+ .section4 {
+   grid-column: 1;
+   grid-row: 2;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+
+ .section5 {
+   grid-column: 2;
+   grid-row: 2;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+ .section6 {
+   grid-column: 3;
+   grid-row: 2;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+
+ .section7 {
+   grid-column: 1;
+   grid-row: 3;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+ .section8 {
+   grid-column: 2;
+   grid-row: 3;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+
+ .section9 {
+   grid-column: 3;
+   grid-row: 3;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+ .section10 {
+   grid-column: 1 / 4;
+   grid-row: 4 / 6;
+   background-color: white;
+   color: black;
+   text-align: center;
+   font-size; 20px;
+ }
+ .section11 {
+   grid-column: 1 / 4;
+   grid-row: 6 / 8;
+   background-color: green;
+   color: white;
+   text-align: center;
+   font-size; 20px;
+ }
+ .section12 {
+   grid-column: 4 / 6;
+   grid-row: 1 / 8;
+   background-color: black;
+   color: white;
+   text-align: center;
+   font-size; 20px;
+ }
