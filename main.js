@@ -1,3 +1,4 @@
+
 // ***************************************************
 // Shopping Cart functions
 //I learned shopping cart through java script and jquerry while
