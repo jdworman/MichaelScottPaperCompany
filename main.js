@@ -132,17 +132,23 @@ var shoppingCart = (function () {
 // ***************************************************
 // Mouse Hover functions
 
+Let image1 = document.getElementById("image1").src
+console.log("image1")
+
+image1.assEventListner("mouseover", function() {
+
+})
 
 function newPicture() {
 
-document.getElementById("image").src="images/coupon.png";
+document.getElementById("image1").src="images/coupon.png";
 
 
 }
 
 function oldPicture() {
 
-document.getElementById("image").src="images/contact.jpg";
+document.getElementById("image2").src="images/contact.jpg";
 
 
 }
