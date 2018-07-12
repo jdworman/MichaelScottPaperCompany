@@ -11,4 +11,3 @@ document.getElementById("image").src="contact.jpg";
 
 
 }
- 
