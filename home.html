@@ -30,6 +30,10 @@
              <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'>
         <h4>Welcome to the Michael Scott Paper Company</h4>
   </div>
+
+  <!-- /* Popmotion ---popmotion.io
+  ================================= */ -->
+
   <div class="sideright">
     <div class="container">
           <h5>Get a Discount on the Finest Paper in PA</h5>
@@ -42,6 +46,56 @@
               <input type="submit" value="Enter info" class="btn">
           </form>
       </div>
+
+      <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+      <script>
+        const container = popmotion.styler(document.querySelector('.container'));
+        const formElements = document.querySelector('.inner');
+        const msgPop = popmotion.styler(document.querySelector('.msg'));
+
+        const myAnim = popmotion.tween({
+            from: {
+                scale: .7, //going to start from size .7//
+                opacity: 0, //fades in//
+                y: -300 //comes down//
+            },
+            to: {
+                scale: 1,
+                opacity: 1, //fades in//
+                y: 0
+            },
+            duration: 1000 //equals to 1 second//
+        })
+
+        const myAnim2 = popmotion.keyframes({
+                    values: [
+                        { y: -50, opacity: 0 },
+                        { y: -20, opacity: 1 },
+                        { y: -20, opacity: 1 },
+                        { y: 0, opacity: 0 },
+                    ],
+                    times: [0, .2,.8, 1],
+                    duration: 3000
+                })
+
+        myAnim.start({
+            update: container.set, //Animates the elements//
+            complete: () => { myAnim2.start(msgPop.set) }
+        });
+
+
+        const stylers = Array
+        .from(formElements.children) //inner//
+        .map(popmotion.styler);
+
+        const animations = Array(stylers.length)
+        .fill(popmotion.spring({ from: 100, to:  0 })); //spring effect and define each animation//
+
+        popmotion.stagger(animations, 100)
+        .start((v) => v.forEach((x, i) => stylers[i].set({'y': x})));
+
+    </script>
+
     <h3>Announcements for the month of July</h3>
     <h6> 07/01 - On July 01, 2018 Michael Scott Paper Company has emerged with Dundler Mifflin Paper Company Inc.  Starting on July 17 we will start selling Dundler Mifflin paper.  </h6>
     <h6> 07/15 - Micahel Scott Paper Company will hold an annual Breast Cancer Awareness Fundraiser at the Lackawanna River Heritage Trail.</h6>
@@ -153,7 +207,7 @@
 </script>
 <center><h1>Checkout</h1></center>
 <p>Checkout here!</p>
-<form method="post" name="orderform" action="mailto:jdworman84@gmail.com" enctype="text/plain"">
+<form method="post" name="orderform" action="mailto:jdworman84@gmail.com" enctype="text/plain">
 <table border="0">
     <tr><td colspan="4">
 
@@ -217,9 +271,9 @@
 
 
        <img src="images/coupon.png" id="image" onmouseover="newPicture()">
-
-
-<div id="footer">
+</div>
+</div>
+<div id="footer" style ="width: 1100px; height: 100px;">
       <ul>
         <li><a href="#home">Home</a></li>
           <li><a href="#whoWeAre">Who We Are</a></li>
