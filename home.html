@@ -4,13 +4,11 @@
   <title>Michael Scott Paper Company</title>
   <meta name="description" content="Resources on Micahel Scott Paper Company Inc">
   <link type="text/css" rel="stylesheet" href="style.css">
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="jscode.js"> </script>
 
 
 </head>
 <body>
-  
+
   <div id="container">
     <div class="header"
   </div>
@@ -190,19 +188,19 @@
     </div>
 </div>
 
-
+ 
 <div>
       <button>Clear Cart</button>
 </div>
 
        <script>
-           $(".add-to-cart").click(function(event){
-               event.preventDefault();
-               var name = $(this).attr("data-name");
-               var price = Number($(this).attr("data-price"));
-               shoppingCart.addItemToCart(name, price, 1);
-               displayCart();
-           });
+           // $(".add-to-cart").click(function(event){
+           //     event.preventDefault();
+           //     var name = $(this).attr("data-name");
+           //     var price = Number($(this).attr("data-price"));
+           //     shoppingCart.addItemToCart(name, price, 1);
+           //     displayCart();
+           // });
 
 
 </script>
@@ -284,6 +282,8 @@
 
   <br></br> &copy; 2018 michaelscottpapercompany.com All Rights Reserved.
 </div>
-
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="jscode.js"> </script>
+</style>
 </body>
 </html>
