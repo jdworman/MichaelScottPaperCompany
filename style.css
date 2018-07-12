@@ -6,9 +6,13 @@ font-size: 14px;
 }
 
 h1 {
+  font-family: sans-serif;
   color: black;
   text-align: center;
-  font-size: 300%
+  position: relative;
+  font-size: 300%;
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -24,11 +28,32 @@ h3 {
   text-align: center;
   font-size: 120%
 }
+h4 {
+  font-family: sans-serif;
+  color: black;
+  text-align: center;
+  position: relative;
+  font-size: 300%;
+  display: inline-block;
+  text-transform: uppercase;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+}
 
+h5 {
+  color: black;
+  text-align: center;
+  font-size: 120%
+}
+h6 {
+  font-family: sans-serif;
+  font-size: 120%
+}
 p {
   color: black;
   font-family: Verdana;
-  font-size: 120%
+  font-size: 70%
 }
 .add-to-cart {
   color: black;
@@ -184,9 +209,8 @@ img {
    grid-template-columns: auto auto auto;
    grid-gap: 10px;
    grid-template-rows: 100px 100px 100px 100px 100px 100px;
-   grid-auto-rows: 100px;
+   /* grid-auto-rows: 100px; */
  }
-
  .nested-grid {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -296,9 +320,9 @@ img {
    font-size; 20px;
  }
  .section1 img {
-   height: 20%;
-   width: 20%;
-  display: block;
+   height: 15%;
+   width: 15%;
+  display: inline;
   max-width: 100%;
   height: auto;
 }
@@ -311,8 +335,8 @@ img {
 }
 
 .section3 img {
-  height: 30%;
-  width: 30%;
+  height: 20%;
+  width: 20%;
  display: inline;
  max-width: 100%;
  height: auto;
@@ -337,7 +361,7 @@ img {
 .section6 img {
   height: 15%;
   width: 15%;
- display: block;
+ display: inline;
  max-width: 100%;
  height: auto;
 }
@@ -351,8 +375,8 @@ img {
 }
 
 .section8 img {
-  height: 50%;
-  width: 50%;
+  height: 30%;
+  width: 30%;
  display: inline;
  max-width: 100%;
  height: auto;
@@ -366,17 +390,10 @@ img {
  height: auto;
 }
 
-.section10 img {
-  height: 20%;
-  width: 20%;
- display: block;
- max-width: 100%;
- height: auto;
-}
 
 .section10 img {
   height: 50%;
-  width: 50%;
+  width: 150%;
  display: inline;
  max-width: 100%;
  height: auto;
