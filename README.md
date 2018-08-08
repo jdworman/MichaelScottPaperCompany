@@ -1,0 +1,1 @@
+This was my first big project.  I wanted to have a concept of Michael Scott from season 5 of the office going on his own and being succeful with his company.  I learned HTML, CSS, jquery, and JS with this assignment. 
